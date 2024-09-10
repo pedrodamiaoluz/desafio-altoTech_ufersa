@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+
+    <!--bootstrap-icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--fim bootstrap-icons-->
+</head>
+
+<body>
+    <div class="menu_container">
+        <input class="input_inf" type="text" name="text-inf" id="text-inf">
+        <div class="button_contaner">
+            <div class="numeros">
+                <button onclick="limpar()" id="nmero_button" class="nmero_button"
+                    style="background-color: rgb(66, 105, 27);">C</button>
+                <button class="nmero_button" onclick="clean()" style="background-color: blue;"><i class="bi bi-backspace-fill"></i></button>
+                <button class="nmero_button" style="background-color: blue;">%</button>
+                <button id="nmero_button" class="nmero_button" onclick="adicionarNumero('9')">9</button>
+                <button class="nmero_button" onclick="adicionarNumero('8')">8</button>
+                <button class="nmero_button" onclick="adicionarNumero('7')">7</button>
+                <button class="nmero_button" onclick="adicionarNumero('6')">6</button>
+                <button class="nmero_button" onclick="adicionarNumero('5')">5</button>
+                <button class="nmero_button" onclick="adicionarNumero('4')">4</button>
+                <button class="nmero_button" onclick="adicionarNumero('3')">3</button>
+                <button class="nmero_button" onclick="adicionarNumero('2')">2</button>
+                <button class="nmero_button" onclick="adicionarNumero('1')">1</button>
+                <button class="nmero_button but-zero" onclick="adicionarNumero('0')">0</button>
+                <button class="nmero_button" onclick="adicionarNumero('.')">,</button>
+            </div>
+            <div class="operacao">
+                <button class="operacao_button" onclick="adicionarOperacao('/')">/</button>
+                <button class="operacao_button" onclick="adicionarOperacao('*')">X</button>
+                <button class="operacao_button" onclick="adicionarOperacao('+')">+</button>
+                <button class="operacao_button" onclick="adicionarOperacao('-')">-</button>
+                <button class="operacao_button n" onclick="calcular()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
