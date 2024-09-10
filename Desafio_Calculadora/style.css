@@ -9,7 +9,7 @@ body {
 }
 
 .input_inf {
-    width: 305px;
+    width: 312px;
     height: 80px;
     font-size: 30px;
     padding: 10px;
@@ -24,10 +24,11 @@ body {
 .menu_container {
     background-color: #0000009d;
     color: #fff;
-    padding: 10px;
+    padding: 10px 6px;
     width: 325px;
     margin: 50px auto;
 }
+
 
 .button_contaner {
     display: flex;
